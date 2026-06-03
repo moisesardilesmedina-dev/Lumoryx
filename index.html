@@ -1,74 +1,245 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lumoryx | Agencia Digital</title>
-<meta name="description" content="Lumoryx - Desarrollo web, e-commerce y soluciones digitales.">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lumoryx Agency crea sitios web, landing pages, tiendas online y automatizaciones para negocios digitales.">
+  <title>Lumoryx Agency | Webs que convierten</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="header">
-<div class="container">
-<div class="logo">LUMORYX</div>
-<nav>
-<a href="#inicio">Inicio</a>
-<a href="#servicios">Servicios</a>
-<a href="#portafolio">Portafolio</a>
-<a href="#nosotros">Nosotros</a>
-<a href="#contacto">Contacto</a>
-</nav>
-</div>
-</header>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Lumoryx Agency">
+      <span class="brand-mark">L</span>
+      <span>Lumoryx</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="main-nav" aria-label="Navegacion principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#precios">Precios</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacto" class="nav-cta">Contacto</a>
+    </nav>
+  </header>
 
-<section id="inicio" class="hero">
-<div class="container">
-<h1>Transformamos ideas en experiencias digitales.</h1>
-<p>Desarrollo web, landing pages y tiendas online para empresas modernas.</p>
-<a class="btn" href="#contacto">Solicitar Cotización</a>
-</div>
-</section>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">Agencia digital para negocios en crecimiento</p>
+        <h1>Lumoryx Agency</h1>
+        <p class="hero-copy">Creamos paginas web, tiendas online y sistemas simples que ayudan a vender, reservar y atender mejor desde el primer dia.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contacto" data-service="Proyecto web completo">Solicitar cotizacion</a>
+          <a class="btn secondary" href="#portafolio">Ver trabajos</a>
+        </div>
+        <dl class="hero-stats" aria-label="Resultados de Lumoryx">
+          <div><dt>24h</dt><dd>respuesta inicial</dd></div>
+          <div><dt>+30</dt><dd>proyectos demo</dd></div>
+          <div><dt>100%</dt><dd>responsive</dd></div>
+        </dl>
+      </div>
+    </section>
 
-<section id="servicios" class="section">
-<div class="container">
-<h2>Servicios</h2>
-<div class="grid">
-<div class="card"><h3>Desarrollo Web</h3><p>Sitios corporativos profesionales.</p></div>
-<div class="card"><h3>Landing Pages</h3><p>Páginas enfocadas en conversiones.</p></div>
-<div class="card"><h3>E-Commerce</h3><p>Tiendas online listas para vender.</p></div>
-<div class="card"><h3>SEO</h3><p>Optimización para buscadores.</p></div>
-</div>
-</div>
-</section>
+    <section class="section" id="servicios">
+      <div class="section-head">
+        <p class="eyebrow">Servicios</p>
+        <h2>Todo lo necesario para lanzar y mejorar tu presencia digital.</h2>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <span class="icon">01</span>
+          <h3>Desarrollo web</h3>
+          <p>Sitios modernos, rapidos y preparados para verse bien en celular, tablet y escritorio.</p>
+          <button class="text-action" type="button" data-service="Desarrollo web">Cotizar servicio</button>
+        </article>
+        <article class="service-card">
+          <span class="icon">02</span>
+          <h3>Landing pages</h3>
+          <p>Paginas enfocadas en conversion para campanas, lanzamientos, cursos y servicios.</p>
+          <button class="text-action" type="button" data-service="Landing page">Cotizar servicio</button>
+        </article>
+        <article class="service-card">
+          <span class="icon">03</span>
+          <h3>E-commerce</h3>
+          <p>Tiendas online con catalogo, pagos, productos destacados y flujo de compra claro.</p>
+          <button class="text-action" type="button" data-service="E-commerce">Cotizar servicio</button>
+        </article>
+        <article class="service-card">
+          <span class="icon">04</span>
+          <h3>Automatizacion</h3>
+          <p>Formularios, respuestas, captacion de leads y procesos repetitivos conectados.</p>
+          <button class="text-action" type="button" data-service="Automatizacion">Cotizar servicio</button>
+        </article>
+      </div>
+    </section>
 
-<section id="portafolio" class="section">
-<div class="container">
-<h2>Portafolio</h2>
-<p>Espacio para mostrar tus proyectos y casos de éxito.</p>
-</div>
-</section>
+    <section class="section portfolio-section" id="portafolio">
+      <div class="section-head">
+        <p class="eyebrow">Portafolio</p>
+        <h2>Proyectos demo listos para adaptar a clientes reales.</h2>
+      </div>
+      <div class="filter-bar" aria-label="Filtrar portafolio">
+        <button class="filter-btn active" type="button" data-filter="all">Todo</button>
+        <button class="filter-btn" type="button" data-filter="web">Web</button>
+        <button class="filter-btn" type="button" data-filter="ecommerce">Tienda</button>
+        <button class="filter-btn" type="button" data-filter="landing">Landing</button>
+      </div>
+      <div class="portfolio-grid">
+        <article class="project-card" data-category="web" data-title="Nexa Studio" data-description="Sitio corporativo para estudio creativo con secciones de servicios, testimonios y formulario de contacto.">
+          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80" alt="Oficina moderna con escritorio y pantallas">
+          <div>
+            <p>Web corporativa</p>
+            <h3>Nexa Studio</h3>
+            <button class="btn small project-open" type="button">Ver detalles</button>
+          </div>
+        </article>
+        <article class="project-card" data-category="ecommerce" data-title="Aura Store" data-description="Tienda online demo con productos destacados, carrito visual y llamados a comprar por categoria.">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80" alt="Persona usando una tienda online en laptop">
+          <div>
+            <p>E-commerce</p>
+            <h3>Aura Store</h3>
+            <button class="btn small project-open" type="button">Ver detalles</button>
+          </div>
+        </article>
+        <article class="project-card" data-category="landing" data-title="Launch Pro" data-description="Landing page para captar leads, presentar beneficios y enviar solicitudes directas al equipo comercial.">
+          <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=900&q=80" alt="Equipo revisando un lanzamiento digital">
+          <div>
+            <p>Landing page</p>
+            <h3>Launch Pro</h3>
+            <button class="btn small project-open" type="button">Ver detalles</button>
+          </div>
+        </article>
+      </div>
+    </section>
 
-<section id="nosotros" class="section">
-<div class="container">
-<h2>Sobre Lumoryx</h2>
-<p>Ayudamos a empresas y emprendedores a crecer mediante soluciones digitales modernas.</p>
-</div>
-</section>
+    <section class="section split" id="proceso">
+      <div>
+        <p class="eyebrow">Proceso</p>
+        <h2>Un camino claro desde la idea hasta el lanzamiento.</h2>
+        <p>Trabajamos con entregables concretos para que sepas que esta pasando en cada etapa del proyecto.</p>
+      </div>
+      <ol class="timeline">
+        <li><strong>Descubrimiento</strong><span>Definimos objetivos, publico, contenido y alcance.</span></li>
+        <li><strong>Diseno</strong><span>Preparamos estructura visual, estilo y experiencia de usuario.</span></li>
+        <li><strong>Desarrollo</strong><span>Construimos el sitio con codigo ordenado y responsive.</span></li>
+        <li><strong>Lanzamiento</strong><span>Revisamos detalles, publicamos y dejamos instrucciones basicas.</span></li>
+      </ol>
+    </section>
 
-<section id="contacto" class="section">
-<div class="container">
-<h2>Contacto</h2>
-<form id="contactForm">
-<input type="text" placeholder="Nombre" required>
-<input type="email" placeholder="Correo" required>
-<textarea placeholder="Cuéntanos tu proyecto"></textarea>
-<button type="submit">Enviar</button>
-</form>
-</div>
-</section>
+    <section class="section" id="precios">
+      <div class="section-head">
+        <p class="eyebrow">Planes</p>
+        <h2>Opciones simples para empezar sin complicaciones.</h2>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card">
+          <h3>Starter</h3>
+          <p class="price">Desde $149</p>
+          <p>Landing page profesional para validar una idea o promocionar un servicio.</p>
+          <button class="btn primary" type="button" data-service="Plan Starter">Elegir plan</button>
+        </article>
+        <article class="price-card featured">
+          <p class="badge">Popular</p>
+          <h3>Business</h3>
+          <p class="price">Desde $349</p>
+          <p>Sitio completo con secciones, formulario, portafolio y optimizacion basica.</p>
+          <button class="btn primary" type="button" data-service="Plan Business">Elegir plan</button>
+        </article>
+        <article class="price-card">
+          <h3>Commerce</h3>
+          <p class="price">Desde $599</p>
+          <p>Tienda online inicial con catalogo, paginas de producto y flujo de venta.</p>
+          <button class="btn primary" type="button" data-service="Plan Commerce">Elegir plan</button>
+        </article>
+      </div>
+    </section>
 
-<a class="whatsapp" href="https://wa.me/51999999999" target="_blank">WhatsApp</a>
+    <section class="section faq-section" id="faq">
+      <div class="section-head">
+        <p class="eyebrow">FAQ</p>
+        <h2>Preguntas frecuentes.</h2>
+      </div>
+      <div class="faq-list">
+        <button class="faq-item" type="button" aria-expanded="false">
+          <span>Cuanto tarda un proyecto?</span>
+          <strong>+</strong>
+          <p>Una landing puede tardar de 3 a 7 dias. Un sitio completo suele tomar de 1 a 3 semanas, segun el alcance.</p>
+        </button>
+        <button class="faq-item" type="button" aria-expanded="false">
+          <span>Puedo cambiar textos e imagenes?</span>
+          <strong>+</strong>
+          <p>Si. El proyecto esta hecho para editar contenido facilmente desde los archivos del sitio.</p>
+        </button>
+        <button class="faq-item" type="button" aria-expanded="false">
+          <span>El formulario envia mensajes?</span>
+          <strong>+</strong>
+          <p>En esta version abre un correo con los datos completados. Se puede conectar despues a un backend o servicio externo.</p>
+        </button>
+      </div>
+    </section>
 
-<script src="script.js"></script>
+    <section class="section contact-section" id="contacto">
+      <div>
+        <p class="eyebrow">Contacto</p>
+        <h2>Cuéntanos que quieres construir.</h2>
+        <p>Completa el formulario y se abrira un correo listo para enviar a Lumoryx Agency.</p>
+        <div class="contact-actions">
+          <a class="btn secondary" href="mailto:hola@lumoryx.agency">Enviar email</a>
+          <a class="btn secondary" href="https://wa.me/51999999999?text=Hola%20Lumoryx%2C%20quiero%20cotizar%20un%20proyecto" target="_blank" rel="noreferrer">WhatsApp</a>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <label>Nombre
+          <input id="name" name="name" type="text" placeholder="Tu nombre" required>
+        </label>
+        <label>Email
+          <input id="email" name="email" type="email" placeholder="tu@email.com" required>
+        </label>
+        <label>Servicio
+          <select id="service" name="service" required>
+            <option value="">Selecciona un servicio</option>
+            <option>Desarrollo web</option>
+            <option>Landing page</option>
+            <option>E-commerce</option>
+            <option>Automatizacion</option>
+            <option>Proyecto web completo</option>
+            <option>Plan Starter</option>
+            <option>Plan Business</option>
+            <option>Plan Commerce</option>
+            <option>Proyecto similar</option>
+          </select>
+        </label>
+        <label>Mensaje
+          <textarea id="message" name="message" placeholder="Cuéntanos objetivo, fecha ideal y presupuesto aproximado." rows="5" required></textarea>
+        </label>
+        <button class="btn primary" type="submit">Enviar solicitud</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Lumoryx Agency. Todos los derechos reservados.</p>
+    <a href="#inicio">Volver arriba</a>
+  </footer>
+
+  <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-panel">
+      <button class="modal-close" type="button" aria-label="Cerrar">×</button>
+      <p class="eyebrow">Caso demo</p>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <a class="btn primary" href="#contacto" data-service="Proyecto similar">Quiero algo similar</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
