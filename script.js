@@ -12,6 +12,11 @@ const quoteSummary = document.querySelector("#quoteSummary");
 const quoteStatus = document.querySelector("#quoteStatus");
 const sectionCount = document.querySelector("#sectionCount");
 const contactForm = document.querySelector("#contactForm");
+const serviceTrack = document.querySelector("#serviceTrack");
+const servicePrev = document.querySelector("#servicePrev");
+const serviceNext = document.querySelector("#serviceNext");
+const supportMenu = document.querySelector(".support-menu");
+const supportToggle = document.querySelector(".support-toggle");
 
 let currentQuote = "";
 const emailConfig = {
@@ -61,6 +66,11 @@ document.querySelectorAll("[data-service]").forEach((button) => {
   });
 });
 
+if (serviceTrack && servicePrev && serviceNext) {
+  servicePrev.addEventListener("click", () => scrollServices(-1));
+  serviceNext.addEventListener("click", () => scrollServices(1));
+}
+
 document.querySelectorAll(".filter-btn").forEach((button) => {
   button.addEventListener("click", () => {
     const filter = button.dataset.filter;
@@ -107,6 +117,13 @@ document.querySelectorAll(".faq-item").forEach((item) => {
     item.querySelector("strong").textContent = isOpen ? "-" : "+";
   });
 });
+
+if (supportMenu && supportToggle) {
+  supportToggle.addEventListener("click", () => {
+    const isOpen = supportMenu.classList.toggle("open");
+    supportToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+}
 
 if (quoteCalculator) {
   quoteCalculator.addEventListener("input", updateQuote);
@@ -242,6 +259,17 @@ function updateQuote() {
   quoteSummary.textContent = currentQuote.replaceAll("\n", " | ");
   quoteStatus.textContent = "";
   quoteStatus.classList.remove("error");
+}
+
+function scrollServices(direction) {
+  const firstCard = serviceTrack.querySelector(".service-card");
+  const gap = 18;
+  const cardWidth = firstCard ? firstCard.getBoundingClientRect().width + gap : 320;
+
+  serviceTrack.scrollBy({
+    left: direction * cardWidth,
+    behavior: "smooth"
+  });
 }
 
 function getQuoteService() {
