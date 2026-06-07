@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Libro de reclamaciones virtual de Lumoryx Agency.">
+  <title>Libro de reclamaciones | Lumoryx Agency</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Lumoryx Agency">
+      <span class="brand-mark">L</span>
+      <span>Lumoryx</span>
+    </a>
+    <nav class="main-nav legal-nav" aria-label="Navegacion legal">
+      <a href="index.html#servicios">Servicios</a>
+      <a href="index.html#portafolio">Portafolio</a>
+      <a href="index.html#contacto" class="nav-cta">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="legal-hero">
+      <div>
+        <p class="eyebrow">Atencion al cliente</p>
+        <h1>Libro de reclamaciones</h1>
+        <p class="hero-copy">Este canal permite registrar quejas o reclamos relacionados con los servicios digitales ofrecidos por Lumoryx Agency.</p>
+      </div>
+    </section>
+
+    <section class="section legal-section">
+      <div class="legal-note">
+        <h2>Antes de registrar tu solicitud</h2>
+        <p>Un reclamo expresa disconformidad relacionada con un servicio contratado. Una queja expresa malestar por la atencion recibida u otro aspecto no directamente relacionado con el servicio contratado.</p>
+        <p>Al enviar este formulario, Lumoryx recibira la informacion necesaria para revisar el caso y responder al correo indicado.</p>
+      </div>
+
+      <form class="contact-form claims-form" id="claimsForm" novalidate>
+        <fieldset>
+          <legend>Datos del consumidor</legend>
+          <label>Nombre completo
+            <input id="claimName" name="claimName" type="text" placeholder="Nombre y apellidos" required>
+          </label>
+          <label>Tipo de documento
+            <select id="claimDocumentType" name="claimDocumentType" required>
+              <option value="">Selecciona una opcion</option>
+              <option>DNI</option>
+              <option>CE</option>
+              <option>Pasaporte</option>
+              <option>RUC</option>
+            </select>
+          </label>
+          <label>Numero de documento
+            <input id="claimDocument" name="claimDocument" type="text" placeholder="Numero de documento" required>
+          </label>
+          <label>Correo electronico
+            <input id="claimEmail" name="claimEmail" type="email" placeholder="tu@email.com" required>
+          </label>
+          <label>Telefono o WhatsApp
+            <input id="claimPhone" name="claimPhone" type="tel" placeholder="+51 999 999 999" required>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Detalle de la solicitud</legend>
+          <label>Tipo de solicitud
+            <select id="claimType" name="claimType" required>
+              <option value="">Selecciona una opcion</option>
+              <option>Reclamo</option>
+              <option>Queja</option>
+            </select>
+          </label>
+          <label>Servicio relacionado
+            <select id="claimService" name="claimService" required>
+              <option value="">Selecciona un servicio</option>
+              <option>Desarrollo web</option>
+              <option>Landing page</option>
+              <option>E-commerce</option>
+              <option>Automatizacion</option>
+              <option>Atencion comercial</option>
+              <option>Otro</option>
+            </select>
+          </label>
+          <label>Monto reclamado, si aplica
+            <input id="claimAmount" name="claimAmount" type="text" placeholder="Ejemplo: S/ 350 o No aplica">
+          </label>
+          <label>Descripcion del caso
+            <textarea id="claimDescription" name="claimDescription" rows="5" placeholder="Describe con detalle lo ocurrido." required></textarea>
+          </label>
+          <label>Pedido del consumidor
+            <textarea id="claimRequest" name="claimRequest" rows="4" placeholder="Indica que solucion solicitas." required></textarea>
+          </label>
+        </fieldset>
+
+        <label class="check-row legal-check">
+          <input id="claimConsent" name="claimConsent" type="checkbox" required>
+          <span>Declaro que la informacion registrada es verdadera y autorizo a Lumoryx a contactarme para atender esta solicitud.</span>
+        </label>
+
+        <button class="btn primary" type="submit">Registrar solicitud</button>
+        <p class="form-status" id="claimsStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Lumoryx Agency. Todos los derechos reservados.</p>
+    <nav class="footer-links" aria-label="Enlaces legales">
+      <a href="index.html">Volver al inicio</a>
+      <a href="https://wa.me/51955338183?text=Hola%20Lumoryx%2C%20tengo%20una%20consulta" target="_blank" rel="noreferrer">WhatsApp</a>
+    </nav>
+  </footer>
+
+  <script src="reclamaciones.js"></script>
+</body>
+</html>

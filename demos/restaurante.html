@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Demo de pagina web para restaurante premium creada por Lumoryx Agency.">
+  <title>Restaurante Premium | Demo Lumoryx</title>
+  <link rel="stylesheet" href="demo.css">
+</head>
+<body style="--primary:#d8a85f;--accent:#8ee4af;--hero-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=80')">
+  <header class="demo-header">
+    <a class="demo-brand" href="../index.html"><span class="demo-mark">L</span> Lumoryx Demo</a>
+    <nav class="demo-nav" aria-label="Navegacion demo">
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contacto">Reservar</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Restaurante de autor</p>
+        <h1>Casa Brasa</h1>
+        <p class="lead">Una experiencia gastronomica elegante con carta digital, reservas y pedidos por WhatsApp.</p>
+        <div class="actions">
+          <a class="btn primary" href="#contacto">Reservar mesa</a>
+          <a class="btn" href="https://wa.me/51955338183" target="_blank" rel="noreferrer">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="servicios">
+      <div class="section-head"><p class="eyebrow">Experiencia</p><h2>Todo listo para convertir visitas en reservas.</h2></div>
+      <div class="cards">
+        <article class="card"><h3>Carta digital</h3><p>Platos destacados, precios, categorias y recomendaciones del chef.</p></article>
+        <article class="card"><h3>Reservas</h3><p>Formulario rapido para elegir fecha, horario y cantidad de personas.</p></article>
+        <article class="card"><h3>Eventos privados</h3><p>CTA para cumpleaños, cenas corporativas y celebraciones especiales.</p></article>
+      </div>
+    </section>
+    <section class="section" id="galeria">
+      <div class="section-head"><p class="eyebrow">Galeria</p><h2>Ambiente, platos y detalles que abren el apetito.</h2></div>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80" alt="Mesa de restaurante elegante">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80" alt="Plato gourmet servido">
+        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=700&q=80" alt="Chef preparando comida">
+      </div>
+    </section>
+    <section class="section">
+      <div class="testimonials">
+        <article class="quote-box"><strong>Excelente presentacion</strong><p>La web transmite categoria y hace facil reservar desde el celular.</p></article>
+        <article class="quote-box"><strong>Mas consultas</strong><p>El boton de WhatsApp y la carta clara ayudan a responder menos preguntas repetidas.</p></article>
+      </div>
+    </section>
+    <section class="section contact-section" id="contacto">
+      <div class="contact-grid">
+        <div><p class="eyebrow">CTA</p><h2>Reserva una mesa o solicita un evento privado.</h2><p class="lead">Esta demo puede adaptarse a restaurantes, cafeterias, bares y dark kitchens.</p></div>
+        <form class="demo-form">
+          <label>Nombre<input name="name" required></label>
+          <label>Email<input name="email" type="email" required></label>
+          <label>Tipo de reserva<select><option>Cena</option><option>Almuerzo</option><option>Evento privado</option></select></label>
+          <label>Mensaje<textarea name="message" rows="4" required></textarea></label>
+          <button class="btn primary" type="submit">Enviar reserva</button>
+          <p class="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="demo-footer"><p>Demo creada por Lumoryx Agency.</p><a href="../index.html#portafolio">Volver al portafolio</a></footer>
+  <script src="demo.js"></script>
+</body>
+</html>
